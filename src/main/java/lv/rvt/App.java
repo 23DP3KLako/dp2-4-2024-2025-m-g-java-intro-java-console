@@ -5,19 +5,17 @@ import java.util.*;
 public class App 
 {
     public static void main( String[] args ) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("How many times?");
-        int numb = Integer.valueOf(scanner.nextLine());
-        int i = 0;
-        for(i = 0; i < numb; i++) {
-            printText();
-        }
+        divisibleByThreeInRange(2, 10);
+     
         
-
     }
-    public static void printText() {
-        System.out.println("In a hole in the ground there lived a method");
+
+    public static void divisibleByThreeInRange(int begining, int end) {
+        for (int i = begining; i<= end; i++ ) {
+            if (i % 3 == 0) {
+                System.out.println(i);
+            }
+        }
     }
  
 }
