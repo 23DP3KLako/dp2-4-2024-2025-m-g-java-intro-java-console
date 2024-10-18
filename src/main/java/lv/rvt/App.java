@@ -6,16 +6,21 @@ public class App
 {
     public static void main( String[] args ) {
         Scanner scanner = new Scanner(System.in);
-        printRectangle(17, 3);
+        printTriangle(3);
 
     }
     
-    public static void printRectangle(int width, int height) {
-        for(int i = 0; i < height; i++){
-            for(int k = 0; k < width; k++){
-                System.out.print("*");
-            }
+    public static void printTriangle(int size) {
+        for(int i = 0; i <= size; i++){
             System.out.println("");
+            printStars(i);
+        }
+        
+    }
+
+    public static void printStars(int size) {
+        for(int j = 0; j <= size; j++){
+            System.out.print("*");
         }
         
     }
