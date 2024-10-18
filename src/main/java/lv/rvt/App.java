@@ -5,19 +5,19 @@ import java.util.*;
 public class App 
 {
     public static void main( String[] args ) {
-        divisibleByThreeInRange(2, 10);
-     
-        
-    }
+        Scanner scanner = new Scanner(System.in);
+        printStars(5);
+        printStars(3);
+        printStars(9);
 
-    public static void divisibleByThreeInRange(int begining, int end) {
-        for (int i = begining; i<= end; i++ ) {
-            if (i % 3 == 0) {
-                System.out.println(i);
-            }
-        }
     }
- 
+    
+    public static void printStars(int number) {
+        for(int i = 0; i < number; i++){
+            System.out.print("*");
+        }
+        System.out.println("");
+    }
 }
 
   
